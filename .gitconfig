@@ -27,4 +27,4 @@
 [credential]
 	helper = osxkeychain
 [include]
-    path = ~/.gitconfig-sensitive
+    path = ~/.gitconfig.local

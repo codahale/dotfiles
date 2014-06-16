@@ -1,5 +1,3 @@
-# -*- mode: sh; -*-
-
 export EDITOR="emacs"
 export CLICOLOR=1
 export BROWSER=open
@@ -15,8 +13,8 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=50000
 export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
 
-if [ -f ~/bashrc-sensitive ]; then
-    . ~/.bashrc-sensitive
+if [ -f ~/bashrc.local ]; then
+    . ~/.bashrc.local
 fi
 
 shopt -s globstar # allow for **/*.blah
