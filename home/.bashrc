@@ -32,8 +32,6 @@ complete -C aws_completer aws
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-eval "$(fasd --init auto)"
-
 function mkcd () {
     mkdir -p "$@" && cd "$@"
 }
