@@ -1,0 +1,67 @@
+---
+- name: Tap Homebrew repositories
+  homebrew_tap: name={{ item }} state=present
+  with_items:
+    - homebrew/binary
+    - homebrew/completions
+    - homebrew/dupes
+    - homebrew/science
+    - homebrew/versions
+
+- name: Update and upgrade Homebrew
+  shell: brew update && brew upgrade && brew cleanup
+
+- name: Install libraries with Homebrew
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - awscli
+    - bash
+    - bash-completion
+    - bazaar
+    - cask
+    - cloc
+    - coreutils
+    - daemontools
+    - docker
+    - gdb
+    - git
+    - gnu-sed
+    - maven
+    - mercurial
+    - mysql
+    - openssl
+    - packer
+    - percona-toolkit
+    - phantomjs
+    - postgresql
+    - protobuf
+    - pv
+    - rbenv
+    - ruby-build
+    - rust
+    - scala
+    - ssh-copy-id
+    - subversion
+    - the_silver_searcher
+    - tig
+    - tmux
+    - tree
+    - unrar
+    - vagrant-completion
+    - vcprompt
+    - vim
+    - wget
+    - wireshark
+    - wrk
+
+- name: Install aspell with Homebrew
+  homebrew: name=aspell state=latest install_options=all
+
+- name: Install emacs with Homebrew
+  homebrew: name=emacs state=linked install_options=cocoa,srgb
+
+- name: Install geoip with Homebrew
+  homebrew: name=geoip state=latest install_options=with-geoipupdate
+
+- name: Install openssh with Homebrew
+  homebrew: name=openssh state=latest install_options=with-keychain-support

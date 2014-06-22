@@ -1,0 +1,30 @@
+[alias]
+	uncommit   = reset --soft HEAD^
+	unstage    = reset HEAD
+	pending    = diff --cached
+	age        = !echo "First commit:" && git log --reverse --pretty=format:'\t\t%ar' | head -n 1 && echo 'Last commit:' && git log --pretty=format:'\t\t%ar' | head -n 1
+	contributors     = !git log --format='%aN%n%cN' | sort | uniq
+	contributors-email = !git log --format='%aN <%ae>%n%cN <%ce>' | sort | uniq
+	timeline = log --oneline --graph --decorate
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+	quotepath = off
+[apply]
+	whitespace = nowarn
+[merge]
+	tool = opendiff
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[credential]
+	helper = osxkeychain
+[include]
+    path = ~/.gitconfig.local

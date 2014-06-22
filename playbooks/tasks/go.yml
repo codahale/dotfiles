@@ -1,0 +1,14 @@
+---
+- name: Install Go dependencies
+  shell: go get -u -v {{ item }}
+  with_items:
+    - github.com/nsf/gocode
+    - github.com/kr/godep
+    - github.com/golang/lint/golint
+    - github.com/kisielk/errcheck
+    - code.google.com/p/go.tools/cmd/benchcmp
+    - code.google.com/p/go.tools/cmd/godex
+    - code.google.com/p/go.tools/cmd/goimports
+    - code.google.com/p/go.tools/cmd/oracle
+    - code.google.com/p/rog-go/exp/cmd/godef
+    - github.com/jteeuwen/go-bindata/go-bindata

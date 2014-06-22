@@ -1,0 +1,3 @@
+; -*- mode: conf-windows; -*-
+[targets]
+localhost ansible_connection=local
