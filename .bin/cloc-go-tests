@@ -1,3 +1,0 @@
-#!/bin/bash
-
-find . -name "*test.go"  -not -iwholename "*Godeps*" | xargs cloc

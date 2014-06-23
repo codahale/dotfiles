@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -eu
-
-cask update --verbose --path ~/.emacs.d/

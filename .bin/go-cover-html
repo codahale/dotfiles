@@ -1,3 +1,0 @@
-#!/bin/bash
-t=$(mktemp /tmp/cover.XXXXXXX)                                                                                                                                
-go test $COVERFLAGS -coverprofile=$t $@ && go tool cover -html=$t && unlink $t

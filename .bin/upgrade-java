@@ -1,3 +1,0 @@
-#!/bin/bash
-sudo rm /Library/Java/JavaVirtualMachines/1.8.0.jdk
-sudo ln -s /Library/Java/JavaVirtualMachines/$(ls -1 /Library/Java/JavaVirtualMachines/ | sort | tail -n 1) /Library/Java/JavaVirtualMachines/1.8.0.jdk
