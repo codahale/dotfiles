@@ -12,3 +12,4 @@
     - code.google.com/p/go.tools/cmd/oracle
     - code.google.com/p/rog-go/exp/cmd/godef
     - github.com/jteeuwen/go-bindata/go-bindata
+    - github.com/monochromegane/the_platinum_searcher
