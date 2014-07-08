@@ -3,7 +3,7 @@
   shell: go get -u -v {{ item }}
   with_items:
     - github.com/nsf/gocode
-    - github.com/kr/godep
+    - github.com/tools/godep
     - github.com/golang/lint/golint
     - github.com/kisielk/errcheck
     - code.google.com/p/go.tools/cmd/benchcmp
