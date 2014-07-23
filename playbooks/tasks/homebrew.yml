@@ -22,7 +22,6 @@
     - cloc
     - coreutils
     - daemontools
-    - docker
     - gdb
     - git
     - gnu-sed
