@@ -1,4 +1,5 @@
 - hosts: targets
+  gather_facts: False
   tasks:
     - include: tasks/homebrew.yml
     - include: tasks/go.yml
