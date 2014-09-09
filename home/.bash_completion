@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 if [[ -d ~/.bash_completion.d ]]; then
-  for file in ~/.bash_completion.d/*; do
+  mapfile array < <(shopt -s nullglob; for f in ~/.bash_completion.d/*; do echo "$f"; done)
+  for file in ${array}; do
     . $file
   done
 fi
