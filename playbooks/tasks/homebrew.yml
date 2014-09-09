@@ -48,6 +48,10 @@
     - wget
     - wireshark
     - wrk
+    - homebrew/completions/docker-completion
+    - homebrew/completions/maven-completion
+    - homebrew/completions/packer-completion
+    - homebrew/completions/vagrant-completion
 
 - name: Install aspell with Homebrew
   homebrew: name=aspell state=latest install_options=all
