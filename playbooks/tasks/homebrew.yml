@@ -45,6 +45,7 @@
     - vagrant-completion
     - vcprompt
     - vim
+    - watch
     - wget
     - wireshark
     - wrk
