@@ -1,6 +1,3 @@
 ---
-- name: Install Emacs config
+- name: Configure Emacs
   git: repo=https://github.com/codahale/emacs.d.git dest=~/.emacs.d
-
-- name: Update Emacs packages
-  shell: chdir=~/.emacs.d cask install && cask update
