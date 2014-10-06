@@ -32,7 +32,6 @@
     - postgresql
     - protobuf
     - pv
-    - rust
     - scala
     - ssh-copy-id
     - subversion
