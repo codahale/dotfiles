@@ -18,10 +18,9 @@
     - bash
     - bash-completion
     - bazaar
-    - cask
     - cloc
     - coreutils
-    - gdb
+    - curl
     - git
     - gnu-sed
     - maven
