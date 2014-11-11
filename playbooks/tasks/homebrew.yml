@@ -54,7 +54,7 @@
   homebrew: name=aspell state=latest install_options=all
 
 - name: Install emacs with Homebrew
-  homebrew: name=emacs state=linked install_options=cocoa,srgb
+  homebrew: name=emacs state=linked install_options=cocoa
 
 - name: Install geoip with Homebrew
   homebrew: name=geoip state=latest install_options=with-geoipupdate
