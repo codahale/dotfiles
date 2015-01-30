@@ -6,7 +6,6 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.8.0.jdk/Contents/Home"
 export LC_CTYPE=en_US.UTF-8
 export LESS="-XFRf -x4"
 export GOPATH="$HOME/Projects/go"
-export CDPATH=".:$GOPATH/src/code.google.com/p:$GOPATH/src/github.com"
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH="~/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$GOPATH/bin"
