@@ -5,7 +5,6 @@
     - homebrew/binary
     - homebrew/completions
     - homebrew/dupes
-    - homebrew/science
     - homebrew/versions
 
 - name: Update and upgrade Homebrew
@@ -18,11 +17,13 @@
     - bash
     - bash-completion
     - bazaar
+    - cask
     - cloc
     - coreutils
     - curl
     - git
     - gnu-sed
+    - leiningen
     - maven
     - mercurial
     - openssl
@@ -55,9 +56,6 @@
 
 - name: Install emacs with Homebrew
   homebrew: name=emacs state=linked install_options=cocoa
-
-- name: Install geoip with Homebrew
-  homebrew: name=geoip state=latest install_options=with-geoipupdate
 
 - name: Install openssh with Homebrew
   homebrew: name=openssh state=latest install_options=with-keychain-support
