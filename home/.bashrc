@@ -2,7 +2,6 @@ export EDITOR="emacs"
 export CLICOLOR=1
 export BROWSER=open
 export PAGER=less
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.8.0.jdk/Contents/Home"
 export LC_CTYPE=en_US.UTF-8
 export LESS="-XFRf -x4"
 export GOPATH="$HOME/Projects/go"
@@ -25,7 +24,7 @@ shopt -s histverify
 set -b
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+    . $(brew --prefix)/etc/bash_completion
 fi
 
 complete -C aws_completer aws
