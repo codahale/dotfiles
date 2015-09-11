@@ -6,7 +6,7 @@
                   [lein-cloverage "1.0.6"]  ; code coverage
                   [lein-difftest "2.0.0"]   ; humane test output
                   ;; [lein-nodisassemble "0.1.3"]
-                  [refactor-nrepl "1.1.0"]  ; refactoring support
+                  [refactor-nrepl "1.2.0-SNAPSHOT"]
                   [cider/cider-nrepl "0.10.0-SNAPSHOT"]]
         :dependencies [[org.clojure/tools.namespace "0.2.11"]
                        [slamhound "1.5.5"]]
