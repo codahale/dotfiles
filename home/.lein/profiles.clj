@@ -9,7 +9,10 @@
                   [refactor-nrepl "1.2.0-SNAPSHOT"]
                   [cider/cider-nrepl "0.10.0-SNAPSHOT"]]
         :dependencies [[org.clojure/tools.namespace "0.2.11"]
-                       [slamhound "1.5.5"]]
+                       [slamhound "1.5.5"]
+                       [pjstadig/humane-test-output "0.7.0"]]
+        :injections [(require 'pjstadig.humane-test-output)
+                     (pjstadig.humane-test-output/activate!)]
         :repl-options {:init (require '[clojure.tools.namespace.repl
                                         :refer [refresh]])}
         :aliases {"analyze" ["do" ["clean"]
