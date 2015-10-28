@@ -1,4 +1,5 @@
-{:user {:plugins [[lein-try "0.4.3"]        ; try libraries in a repl
+{:user {:plugins [[org.clojure/clojure "1.7.0"]
+                  [lein-try "0.4.3"]     ; try libraries in a repl
                   [lein-kibit "0.1.2"]      ; lint common problems
                   [lein-ancient "0.6.7"]    ; find old deps
                   [jonase/eastwood "0.2.1"] ; more linting
@@ -12,6 +13,7 @@
                   [refactor-nrepl "2.0.0-SNAPSHOT"]
                   [cider/cider-nrepl "0.10.0-SNAPSHOT"]]
         :dependencies [[com.aphyr/prism "0.1.1"]
+                       [org.clojure/tools.nrepl "0.2.11"]
                        [org.clojure/tools.namespace "0.2.11"]
                        [pjstadig/humane-test-output "0.7.0"]
                        [slamhound "1.5.5"]]
