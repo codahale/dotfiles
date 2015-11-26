@@ -2,7 +2,8 @@
                   [cider/cider-nrepl "0.10.0-SNAPSHOT"
                    :exclusions [org.clojure/tools.nrepl]]]
         :dependencies [[org.clojure/tools.nrepl "0.2.12"]
-                       [org.clojure/tools.namespace "0.2.11"]]
+                       [org.clojure/tools.namespace "0.2.11"]
+                       [acyclic/squiggly-clojure "0.1.4"]]
         :repl-options {:init (require '[clojure.tools.namespace.repl
                                         :refer [refresh]])}}
  :user {:plugins [[org.clojure/clojure "1.8.0-RC2"]
