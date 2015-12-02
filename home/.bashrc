@@ -7,10 +7,11 @@ export LESS="-XFRf -x4"
 export GOPATH="$HOME/Projects/go"
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export MANPATH="/usr/local/man:$MANPATH"
-export PATH="~/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$GOPATH/bin"
+export PATH="~/.bin:/usr/local/MacGPG2/bin/:/usr/local/sbin:/usr/local/bin:$PATH:$GOPATH/bin"
 export HISTCONTROL=ignoreboth
 export HISTSIZE=50000
 export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
+export LEIN_GPG="/usr/local/MacGPG2/bin/gpg2"
 
 if [ -f ~/bashrc.local ]; then
     . ~/.bashrc.local
